@@ -64,7 +64,7 @@ I disovered a library that might be more suitable for this project:
 It's much simpler to use, because I don't have to iterate over the elements
 of the document manually. It also offers a natural way to represent tables.
 
-I just think I somehow need to deal with images later.
+I just think I somehow need to deal with images later they might
 
 Anyways, I have a basic document loader, so I can now move
 to the Vector Store part.
@@ -73,3 +73,10 @@ I've already started implementing a `load-documents` script. For now, it just
 creates langchain documents from the DOCX files. The next step is to store
 the documents in the vector store.
 
+# 4
+
+I implemented a vector store using ChromaDB. Chose it mainly for its ease of use.
+I ended up using HuggingFace embeddings wrapper provided by LangChain
+to interact with the embedding model. I originally planned to use Llama.cpp
+but I had some issues loading the model. I didn't want to spend time on that
+so I went with HuggingFace. Might get back to it later.
