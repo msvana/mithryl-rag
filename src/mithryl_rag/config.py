@@ -13,5 +13,4 @@ CHROMA_COLLECTION_NAME = "mithryl-rag"
 CHROMA_DIRECTORY = BASE_PATH / "vectors"
 
 RAG_LLM = "qwen3:8b"
-
-
+VISION_LLM = "ministral-3:3b"

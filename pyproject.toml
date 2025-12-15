@@ -16,6 +16,7 @@ dependencies = [
     "markitdown[docx]>=0.1.4",
     "pytest>=9.0.2",
     "sentence-transformers>=5.2.0",
+    "wand>=0.6.13",
 ]
 
 [project.scripts]

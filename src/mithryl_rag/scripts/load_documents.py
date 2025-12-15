@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 from mithryl_rag.core.document_loader import DocumentLoader
+from mithryl_rag.core.image_to_text import ImageToText
 from mithryl_rag.core.vector_store import get_vector_store
 
 
@@ -11,11 +12,10 @@ def main():
     args = parser.parse_args()
 
     logging.info(f"Loading documents from {args.dir}")
-    document_loader = DocumentLoader()
+    document_loader = DocumentLoader(ImageToText())
     documents = document_loader.load_documents(args.dir, True)
     logging.info(f"Loaded {len(documents)} documents")
 
-    exit()
     logging.info("Creating vector store")
     vector_store = get_vector_store()
     

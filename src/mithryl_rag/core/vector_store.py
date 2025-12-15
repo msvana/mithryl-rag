@@ -6,7 +6,7 @@ from mithryl_rag import config
 
 def get_vector_store(
     embedding_model: str = config.EMBEDDING_MODEL,
-    collection_name: str | None = config.CHROMA_COLLECTION_NAME,
+    collection_name: str = config.CHROMA_COLLECTION_NAME,
 ) -> Chroma:
     embeddings = HuggingFaceEmbeddings(model_name=embedding_model)
 
