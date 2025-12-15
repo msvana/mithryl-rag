@@ -25,7 +25,7 @@ def test_load_documents(document_loader: DocumentLoader):
 
 
 def test_single_document(document_loader: DocumentLoader, single_document_path: Path):
-    document = document_loader.load_single_document(single_document_path)
+    document = document_loader.load_single_document(single_document_path)[0]
     assert document.metadata["document_name"] == single_document_path.name
     assert len(document.page_content) > 0
 

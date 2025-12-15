@@ -12,9 +12,10 @@ def main():
 
     logging.info(f"Loading documents from {args.dir}")
     document_loader = DocumentLoader()
-    documents = document_loader.load_documents(args.dir)
+    documents = document_loader.load_documents(args.dir, True)
     logging.info(f"Loaded {len(documents)} documents")
 
+    exit()
     logging.info("Creating vector store")
     vector_store = get_vector_store()
     
