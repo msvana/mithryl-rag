@@ -1,0 +1,34 @@
+from pathlib import Path
+
+import pytest
+
+from mithryl_rag.core.document_loader import DocumentLoader
+
+
+@pytest.fixture
+def document_loader():
+    return DocumentLoader()
+
+@pytest.fixture
+def documents_path():
+    return Path("documents/")
+
+@pytest.fixture
+def single_document_path(documents_path: Path):
+    return documents_path / "Copy of F22-855-4.0 - 01 - Organizational Context Procedure.docx"
+
+def test_load_documents(document_loader: DocumentLoader, documents_path: Path):
+    documents = document_loader.load_documents(documents_path)
+    assert len(documents) == 23
+
+def test_single_document(document_loader: DocumentLoader, single_document_path: Path):
+    document = document_loader.load_single_document(single_document_path)
+    assert document.metadata["document_name"] == single_document_path.name
+    assert len(document.page_content) > 0
+
+    # Here are some pieces of text that should be in the document
+    assert "Organizational Context Procedure" in document.page_content
+    assert "Quality Controller" in document.page_content
+    assert "Formtech Composites maintains and controls documented information" in document.page_content
+    assert "F22-855-7.5 – Control of Documented Information" in document.page_content
+    
