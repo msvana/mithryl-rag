@@ -80,3 +80,25 @@ I ended up using HuggingFace embeddings wrapper provided by LangChain
 to interact with the embedding model. I originally planned to use Llama.cpp
 but I had some issues loading the model. I didn't want to spend time on that
 so I went with HuggingFace. Might get back to it later.
+
+# 5
+
+I've implemented a basic RAG agent as a CLI tool. I changed a few things though.
+First, I I am using gwen3:8b instead of Gemma. As it turns out, the 12B variant
+of Gemma 3 doesn't support tool calling. I want to make the RAG a bit agentic.
+Document search is provided as a tool, and the agent can decide when and how to
+use it.
+
+I chose the 8B version because, I can run it locally.
+
+Also, Instead of Llama.cpp I decided to use Ollama. The reason is speed. I
+already have Ollama up and running on my machine. I would have to compile Llama.cpp
+with CUDA support, which would take unnnecessary time. Given that this is a relatively
+small demo and I have limited time, I decided to go with Ollama.
+
+However, if I were to turn this into a real product, I'd revisit this decision.
+AFAIK, Ollama is not great at handling multiple requests in parallel.
+
+Given that the RAG tool seems to provide reasonable answers,
+I'll now spend some time writing a README. Then, just make things a bit more
+interesting, I'll also look into extracting images.

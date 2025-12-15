@@ -23,15 +23,10 @@ def test_basic_retrieval(vector_store: Chroma, documents):
 
     assert len(vector_store.get()["documents"]) == len(documents)
 
-    queries = [
-        "Organizational Context Procedure",
-        "Risk Management Procedure",
-        "Change Management Procedure",
-    ]
-
     # Sanity check:
     # querying document name should return the document with the same name
-    for query in queries:
+    for document in documents:
+        query = document.metadata["document_name"]
         results = vector_store.similarity_search(query, k=3)
         assert len(results) == 3
         assert query in results[0].metadata["document_name"]

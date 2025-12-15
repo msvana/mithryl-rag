@@ -12,6 +12,7 @@ dependencies = [
     "langchain-chroma>=1.1.0",
     "langchain-community>=0.4.1",
     "langchain-huggingface>=1.2.0",
+    "langchain-ollama>=1.0.1",
     "markitdown[docx]>=0.1.4",
     "pytest>=9.0.2",
     "sentence-transformers>=5.2.0",
@@ -19,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 load-documents = "mithryl_rag.scripts.load_documents:main"
+tui = "mithryl_rag.scripts.tui:main"
 
 [build-system]
 requires = ["uv_build>=0.8.11,<0.9.0"]

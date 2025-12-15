@@ -12,4 +12,6 @@ EMBEDDING_MODEL = "google/embeddinggemma-300m"
 CHROMA_COLLECTION_NAME = "mithryl-rag"
 CHROMA_DIRECTORY = BASE_PATH / "vectors"
 
+RAG_LLM = "qwen3:8b"
+
 
