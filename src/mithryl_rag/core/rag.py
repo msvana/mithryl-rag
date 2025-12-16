@@ -3,17 +3,17 @@ from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
 from langgraph.checkpoint.memory import InMemorySaver
 
-from mithryl_rag.core.vector_store import get_vector_store
+from mithryl_rag.core.vector_store import VectorStore
 from mithryl_rag.config import RAG_LLM
 
-vector_store = get_vector_store()
+vector_store = VectorStore()
 llm = ChatOllama(model=RAG_LLM, temperature=0.0)
 
 
 @tool(response_format="content_and_artifact")
 def retrieve_documents(query: str):
     """Retrieve documents containing information relevatn to the query."""
-    retrieved_docs = vector_store.similarity_search(query, k=6)
+    retrieved_docs = vector_store.similarity_search(query, k=5)
     serialized = "\n\n".join(
         (f"Source: {doc.metadata['document_name']}\nContent: {doc.page_content}")
         for doc in retrieved_docs
