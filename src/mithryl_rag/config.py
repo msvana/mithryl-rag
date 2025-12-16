@@ -10,6 +10,8 @@ DOCUMENTS_DIRECTORY = BASE_PATH / "documents"
 
 CHROMA_COLLECTION_NAME = "mithryl-rag"
 CHROMA_DIRECTORY = BASE_PATH / "vectors"
+CHUNK_SIZE = 4000
+CHUNK_OVERLAP = 250
 
 EMBEDDING_LLM = "embeddinggemma:latest"
 RAG_LLM = "qwen3:8b"
