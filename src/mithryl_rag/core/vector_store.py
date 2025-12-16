@@ -1,14 +1,14 @@
 from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_ollama import OllamaEmbeddings
 
 from mithryl_rag import config
 
 
 def get_vector_store(
-    embedding_model: str = config.EMBEDDING_MODEL,
+    embedding_model: str = config.EMBEDDING_LLM,
     collection_name: str = config.CHROMA_COLLECTION_NAME,
 ) -> Chroma:
-    embeddings = HuggingFaceEmbeddings(model_name=embedding_model)
+    embeddings = OllamaEmbeddings(model=embedding_model)
 
     vector_store = Chroma(
         collection_name=collection_name,

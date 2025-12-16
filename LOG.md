@@ -102,3 +102,30 @@ AFAIK, Ollama is not great at handling multiple requests in parallel.
 Given that the RAG tool seems to provide reasonable answers,
 I'll now spend some time writing a README. Then, just make things a bit more
 interesting, I'll also look into extracting images.
+
+# 6
+
+I've implemented turning images into text and adding them to the vector store.
+I used the recently released `ministral-3:3b model`. I originally started
+with QWEN, but it regularly got stuck. Ministral seems to work fine.
+
+The RAG tool was able to answer a test question about an image and I am
+quite happy about that.
+
+I still need to write some tests for this part.
+
+I am replacing the images in the extracted markdown with placeholders
+containing the image ID. I could introduce a tool that would get the
+contents of a specific image.
+
+I've also started using Ollama for embeddings. This solution uses less
+memory and reduces the number of dependecies - I don't need to install
+`sentence-transformers` and `PyTorch` anymore.and
+
+As the next step I'll do some refactoring and think about introducing
+a basic benchmarking script. I am thinking about taking the
+example questions, answering them manually and then using a metric
+like BLEU to compare the answers.
+
+Using this benchmark, I could try different models like Ministral, some
+smaller Llama, or somethinng like that.

@@ -38,13 +38,13 @@ class DocumentLoader:
             if not self._image_to_text:
                 raise ValueError("Image extraction requires an image to text agent")
 
-            for match in self.IMAGE_REGEX.finditer(result_text):
+            for i, match in enumerate(self.IMAGE_REGEX.finditer(result_text)):
                 image_match = match.group(0)
-                result_text = result_text.replace(image_match, "%IMAGE%")
+                result_text = result_text.replace(image_match, f"%IMAGE_{i}%")
                 image_text = self._image_to_text.analyze_image(image_match)
                 document = Document(
                     page_content=image_text,
-                    metadata={"document_name": path.name, "is_image": True},
+                    metadata={"document_name": path.name, "image_id": i},
                 )
                 documents.append(document)
 
