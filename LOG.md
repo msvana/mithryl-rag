@@ -129,3 +129,19 @@ like BLEU to compare the answers.
 
 Using this benchmark, I could try different models like Ministral, some
 smaller Llama, or somethinng like that.
+
+# 7
+
+After some basic refactoring, I implemented a benchmarking script.
+As a toy example, I've decded using the ROUGE1 score to evaluate
+the agent. 
+
+I've used 3 questions from the assignment for which I could extract
+answers from the documents on my own. I also added a question
+whose answer is contained in an image.
+
+I've compared two models - Ministral and Qwen3 in their 8B variants.
+As it turns out, Ministral is better on average.
+
+Tomorrow, I'll just make sure that everything works and merge the
+branch.

@@ -1,0 +1,70 @@
+Design Planning
+It is vitally important to plan appropriately for Designing and to accurately record this process, should there be a necessity to trace back the work.
+The design planning documentation is recorded in the action tracker established. This will include the assigned design engineers, support staff, third party providers, and the responsibility and authority for each. Where third parties are utilized, approved points of contact will need to be defined.
+The Engineering Manager will develop a design schedule; this will be developed with the input of the customer and third-party providers, if necessary. The schedule will be updated as the design work progresses (in some cases, the recording of the design work schedule and the defined authorities are recorded on documents provided by customer).
+Formtech owns the development product - Plan
+Research and development will be determined by top management to take place when project is sufficiently mature to secure a controlled design. This will typically be decided when a project appears to have a high likelihood of being produced or making it to the market and moved into a controlled design. Prior to this decision, any R&D activity is outside the scope of the management system.
+Design and Development of component Plan
+In most cases, management team will determine when research and development project is feasible based on the development criteria, project progress and design requirements presented by customer (e.g. if project requires Formtechs’ design support).
+This information is then processed by the Engineering Manager who will begin planning the design activities to be conducted.
+Design for manufacture Plan
+A slightly different approach by Formtech is taken when only facilitating the manufacture of products, where planning is only applicable to the strategy of producing tooling and ply design. 
+Ideally, all the above plans are still present in case they need to be triggered at any phase of the design process, should the tooling or ply design be considered critically impractical. Should this need arise, Formtech shall inform the customer in accordance with the ‘quoting and order procedure’.
+Design Input
+Design “inputs” are the requirements for the final product.
+The Management Team will ensure the capture of all requirements related to the product. These may include:
+Customer specific requirements
+Regulatory and statutory requirements
+Internal requirements (capabilities, capacities, etc.)
+Safety requirements, if applicable
+Measurement and inspection methods, acceptance criteria and tolerances
+Applicable third-party specifications, standards, etc.
+Material requirements.
+Functional requirements.
+Operational requirements.
+The design inputs will be captured in Requirements Specification Matrix Form.
+Design Outputs
+Once design inputs are captured, the development of design outputs may begin. Typically, these are:
+Mandatory:
+Drawings
+QA Procedure
+CAD Models
+Internal standards, work instructions, check sheets
+If applicable:
+FEA Analysis report (if applicable)
+Design Definition Report (if applicable)
+Interface Control Document (if applicable)
+Configuration 
+The Engineering Manager will oversee the development of the appropriate design outputs, including those produced by third party providers.
+All design outputs must be developed so they properly address the applicable design input requirements.
+Configuration Management
+In accordance with the configuration management procedure, the responsible design engineer is required to maintain a CIDL (configuration items data list). This is key in maintaining visibility on the development stage of each subcomponent in a large system engineering activities where multiple subsystems are developed in parallel. It could also be used as a tool for version control of CAD, documents, and components.
+Design Review and Verification
+The design outputs must undergo two types of review. The first is a simple design review performed by an engineer of the design output, who may review their own work. Based on the design planning performed earlier, additional reviews may include having the work reviewed and signed off by an objective third party. 
+Next, design verification shall be performed. This is a verification that all design inputs have been addressed satisfactorily in the design outputs. This is conducted internally by the Engineering Manager and then with the responsible engineering contact from the end-user.
+The design engineer and project manager will develop a verification plan which details the strategies used to validate that the design outputs satisfy the requirement specification. Strategies may include:
+Proof testing of a porotytpe component
+Validation of FEA through coupon testing
+Physical measurement and comparison against CAD
+Scale model testing
+The design process may not proceed until all design outputs and verification methods are approved as having addressed the design inputs.
+Design Validation
+Once the end-user has signed off the verification plan, the testing activities are then conducted and reported on the requirement matrix as: Compliant, non-compliant, part-compliant or N/A. These are reported at every design gate. Production and tooling design may not commence until all validation activities have been conducted.
+Design Changes
+Where changes are required of design data, these shall be requested by submitting a ECR form (Engineering Change Request).
+The change request will be reviewed by the engineering manager and if approved, shall be implemented in accordance with the design needs discussed, and recorded in a Design Log initiated herein.
+All design data or documents will be revised with their revision indicator incremented.
+Changed designs must go through the same design review, verification, and validation as original releases.
+
+Forms:
+F21-000-0005 – Action Tracker
+F22-855-8.3.1 – ECR (Engineering Change Request) Form
+F18-855-0069 – Drawing Register
+F22-855-8.3.2 – Requirements Specification Matrix Form
+F22-855-8.0.1 – Configuration Management Form
+F22-855-8.3.3 – Design and Development Process Flow
+F22-855-1.0 – Quality Manual
+F22-855-8.0 - Configuration management
+
+
+

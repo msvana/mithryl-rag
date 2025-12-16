@@ -1,0 +1,33 @@
+Quoting and Orders Process
+Capture of Requirements
+Orders and enquiries may be received via email, telephone or directly from customers.
+During the RFQ process, customer requirements are captured and recorded. 
+Then typically, a Technical Review formerly takes place to assess and discuss the following:
+Identification and documentation of the customer requirements (RFQ Technical review).
+Review of these requirements.
+Review of the technical and managerial risks
+Establish project management strategy
+Agree on quotation and communication format
+Review Of Requirements
+Managing Director will oversee the review of incoming requirements, to ensure Formtech has the capability to meet those requirements. This must occur before any commitment to provide products or services to the customer.
+These requirements will typically be documented via the exchange of emails. However, they may also be documented separately and filed appropriately before beginning quotation process. These requirements are then discussed over a quote review meeting.
+Customer requirements are dealt within the following manner:
+RFQ raised.
+Receipt and understanding of the customer requirements.
+Review of our capability to meet these requirements (including current workload and available resources) and associated risks.
+If tender for serial production - reviewed and approved by management team.
+Confirmation of acceptance of orders, prices, and deliveries to the customer by provision of quote to customer.
+Quotes and amendments from either party effectively managed.
+Orders will be acknowledged where required.
+On customer acceptance, either email or receipt of customer Purchase Order, quote converted to order.
+If quote is not accepted after additional review, quote to be marked as lost.
+The review of requirements may require a formal risk assessment, at the discretion of management. If so, the risk assessment shall define the expected risks associated with the work, as well as a mitigation plan for each identified risk. If useful, risks may be ranked by likelihood of occurrence and severity of the impact of the risk, if it does occur. Management may elect to accept certain risks as a function of doing business, but if so, this must also be indicated.  When a risk assessment is conducted, this will be filed with the appropriate requirements in conjunction of RFQ file pack.
+An official quotation must be prepared by the designated Project Manager (or designated responsible) with input from all appropriate departments and staff, and it must be reviewed by the Management Team before being released to the customer. The internal quotation Process must take place using form Quoting Template; upon completion of final review an Enquiry can be uploaded to Progress Plus, signed and sent to customer.
+When a contract or purchase agreement is subsequently received, it shall be reviewed by the Managing Director to ensure there are no differences between it and any previously submitted quotations. If there are differences, the designated Project Manager shall resolve these with the customer before the contract is accepted.
+Acceptance of a contract or purchase agreement is to be done by the Managing Director and recorded on Formtechs’ server to the customer folder.
+Changes to Requirements
+Where the customer requests changes to active work, the changes must also be captured, reviewed, and approved prior to committing to the change.
+The change will consider the impact on work already delivered, work underway, and planned work. Problems or concerns over implementing the change will be communicated by Management and Engineering Team with the customer. Such changes may require renegotiation of contracts.
+If changes are agreed upon, the Management team will work with the affected departments to implement the change. In addition to input from customer, management will determine what to do with existing work.
+Where changes are required by Formtech, these will be negotiated with the customer before implementation, and a record of the customer’s acceptance maintained.
+

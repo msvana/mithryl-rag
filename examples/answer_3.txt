@@ -1,0 +1,62 @@
+FOD Overview
+The aerospace industry typically refers to “foreign object damage” or “foreign object debris” as FOD. Formtech Composites has adopted this abbreviation.
+The presence of FOD in Formtech’s parts can lead to catastrophic part failure during manufacturing or use by the customer. Because our customer includes aerospace companies, such catastrophic failure could lead to the loss or damage to highly valued aircraft components. Therefore, Formtech’s parts must be free of foreign objects (FOD) prior to shipping.
+For the purposes scope of manufacturing of Formtech’s, Foreign Object Debris includes, but is not limited to:
+Burrs (whether loose or attached)
+Chips
+Dirt
+Oils (including fingerprints)
+Packing materials (foam, cardboard, etc.)
+Peeling (paint, oxidation, other unfixed coatings)
+Tools, supplies left inside product
+Loose components
+Sand, grit, or blasting
+Unwanted tape or adhesive material
+Excess composite material
+Paperwork (inside parts)
+FOD Design Considerations
+FOD prevention should begin the reduction of damage potential and elimination of FOD hazards with the design process. Design considerations include tooling, fixtures, and ground support systems. 
+During the development and design strategy plan and process, the following may be considered:
+Identify and eliminate areas which foreign object could get trapped.
+Identify and seal areas through which foreign objects can migrate.
+Install special access for inspection and clean-out of foreign objects that could potentially cause damage.
+Use blind fasteners in critical areas that are not likely to leave debris during fitting.
+Identify and minimize intricate areas which may lead to difficult clearing of adhesive during bonding process. 
+Design revisions due to FOD corrective actions should be incorporated and lessons learned should be applied to all design activities.
+Design reviews, verification and validation shall take into consideration FOD and FOD risks.
+Pre-Manufacturing FOD Prevention
+During development of production processes, including production documentation related to parts, Formtech will take into consideration the manufacturing steps intended for the given part, and plan these in a way that reduces the creation or introduction of FOD.
+Pre-manufacturing planning shall sequence manufacturing and production tasks to impede foreign object damage and debris or contamination getting trapped. Work instructions should contain necessary processes and procedures for controlling and removal of contamination and debris during fabrication and assembly operations. As applicable, the following should be included as basic in all work instructions:
+Applicable to CNC machine and / or other automated equipment: Upon completion of final machining operation, clean, or flush the machined component to assure that it is free of debris, and immediately cap or seal exposed openings to prevent foreign object entry.
+Applicable to automated equipment: Verify required protective devices (e.g. dust covers, temporary seal, cushioning, etc.) are present and properly installed. Items with protective devices missing are to be inspected for FOD and cleaned if necessary.
+Applicable to pneumatic systems: After fluid and pneumatic system lines and tubing are cut and deburred, assure thorough cleaning and cap ends of lines.
+Inspect and remove unnecessary material as part of the assembly step, conduct a foreign object inspection and remove debris.
+Inspect production tooling (e.g. jigs, fixtures, moulds, handling equipment, etc.) to assure it is clean, undamaged, and free of foreign material. Exercise this same care for work stands, ladders, special test equipment, etc. 
+Protect products by using FOD barriers, foam pads, covers, etc. For example, cover composite assemblies during production activities that could cause damage and place pads between a tool and the assembly. Always protect sensitive areas from FOD.
+Inspect components and equipment for damage prior to completion. Always ensure for the integrity of the part.
+Manufacturing / Production FOD Prevention
+During all manufacturing stages, all operators shall be alert for FOD and take appropriate action to prevent it.
+Operators shall follow all instructions as developed by pre-manufacturing planning detailed above.
+If FOD is discovered, this must be removed by the operator prior to release to the next operations, wherever possible. The only exception is when the next operations is specifically designed for FOD removal.
+Operators shall sign off inspection steps. This signature shall mean that all parts (100%) have been inspected and determined to be free of FOD.
+FOD Control Zones may be identified (typically through signs, barriers or other physical marking and segregation, or as defined in procedures or work instructions). In such cases, increased FOD awareness is required. The additional controls for the specific FOD Control Zone shall be defined by the following:
+When physical entry is required into the Cleanroom, personnel should remove all loose objects, badges, jewellery, etc., from clothing. Pocketless coveralls should be worn to impede foreign objects dropping from pockets onto a FOD critical area.
+Accountability methods to control objects (such as nuts, bolts, screw, rivets, and other.), are the following:
+Organizing tool kits by task
+Clearly marked FOD containers should be placed in the key locations within the work area entry and exit points.
+Implementation of “Clean-As-You-Go” method.
+Use covered trays containers to dispose of other unnecessary objects.
+Accountability methods to control and recover hand tools and other devices which may need to enter the FOD control zone (these “other devices” must be removed before the end of production, final delivery, and post use), are the following:
+Use of shadow boards, shadow boxing, tool counters, or tool kits which identify tool placement and aid in identifying when tool is in use or missing.
+All loose tools should be contained in a toolbox, tote tray, or any other tool container which may be spill-proof and not placed in a way it would cause damage to the components.
+Where applicable, tools/equipment should be tied or suitably restrained to the user in areas where a dropped article could result in damage to components.
+Tool inventory logs may be used to record all tools brought into a FOD Control Zone, once the work is completed, the tools may be checked back in, meaning they are accounted for and not left in the FOD Control Zone. Operators are responsible for ensuring that all such tools logged entries to FOD Control Zone are logged as having been removed also.
+QA Inspection methods for FOD
+All QA inspections and tests shall include a visual inspection for FOD, whether this is required by the specific inspection or test procedure or not.
+Customer specific types of FOD are defined within the work instructions and/or VAS inspection document.
+Final inspection shall include a visual FOD inspection for all aerospace (100%) parts. QA inspections signoffs shall mean that ALL parts have been inspected and determined to be free of FOD.
+FOD critical areas of large scale may be checked for FOD by the conducting of FOD walks, where a team of employees slowly walk an area, visually investigating for potential or existing FOD for FOD generators.
+As a more formal method, a full FOD Audit may be conducted, in compliance with the internal auditing procedures in place for quality system audits. Such FOD audits should be scheduled, with results recorded and any nonconformities reported. See Internal Auditing Procedure.
+FOD Training
+As deemed appropriate, specific FOD Training Programs may be developed for key personnel, and records of completed FOD training shall be maintained.
+
