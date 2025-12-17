@@ -8,7 +8,7 @@ This tool requires a local [Ollama](https://ollama.com) for running open-source 
 locally and [uv](https://docs.astral.sh/uv/) to create a virtual environment and
 install dependencies.
 
-## Installation and usage
+## Installation
 
 1. Clone the repository
 
@@ -24,21 +24,25 @@ uv sync
 ollama pull qwen3:8b ministral-3:3b embeddinggemma:latest
 ```
 
-4. Create a vector database for document search
+## Usage
+
+1. Create a vector database for document search. Required documents are not present in the repository for confidentiality reasons.
 
 ```bash
 uv run load-documents -d {path/to/documents}
 ```
 
-5. Run the RAG agent and chat with it
+2. Run the RAG agent and chat with it
 
 ```bash
 uv run tui
 ```
 
+3. To exit the chat, send a message `exit`
+
 ### Image analysis
 
-This tool can also use images embedded in the documents as sources of information.
+ForThis tool can also use images embedded in the documents as sources of information.
 Images get processed by a VLM and turned into text documents. To enable image analysis,
 run the `load-documents` script with the `-i` flag.
 
@@ -56,3 +60,25 @@ following settings:
 - `CHROMA_COLLECTION_NAME`: The name of the ChromaDB collection to use
 - `CHROMA_DIRECTORY`: The directory where the ChromaDB collection is stored
 - `RAG_LLM`: The LLM to use for the RAG agent
+
+## Benchmarking
+
+The repository contains a benchmarking script that can be used to compare different
+LLMs and RAG implementations. It calculates the ROUGE1 score on 4 example questions.
+
+To run the benchmark, run the following command:
+
+```bash
+uv run benchmark
+```
+
+## Testing
+
+To run the tests, run the following command:
+
+```bash
+uv run pytest
+```
+
+For the tests to work properly, you need to have the relevant documents in the
+`documents/` directory.
