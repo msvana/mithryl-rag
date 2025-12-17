@@ -49,3 +49,8 @@ def test_single_document_with_images(
     image_0 = documents[0]
     assert image_0.metadata["image_id"] == 0 
     assert "formtech" in image_0.page_content.lower()
+
+    image_qms = documents[-2]
+    assert "Quality Manual" in image_qms.page_content
+    assert "Quality Management System Procedures" in image_qms.page_content
+    assert "Work Instructions, Records, Forms and Documents" in image_qms.page_content
