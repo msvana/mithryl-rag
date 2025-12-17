@@ -142,3 +142,28 @@ I've compared two models - Ministral and Qwen3 in their 8B variants.
 As it turns out, Ministral is better on average.
 
 Tomorrow, I'll just make sure that everything works and merge the branch.
+
+# 8
+
+I did some cleanup and small enhancements.
+
+- I've modified the prompt so that the agent doesn't answer if the answer to the question is not in the documents.
+- The agent should now also better handle multiple questions in one chat session.
+- I've extended the tests to better cover image analysis.
+- I've updated the README to reflect the changes, especially the presence of the `benchmark` script.
+
+# 9 
+
+Let me end with some thoughts on possible improvements. In no particular order:
+
+- I could have created a web UI for the RAG agent.
+- I could have implemented a tool for loading the text representation of a specific image.
+  The documents contain image IDs. The agent could request them to better connect the information
+  in the documents and in images.
+- In a real-world setting, I would probably use a different LLM runner instead of Ollama.
+  Ollama is quick to set up and easy to use, but it's not great at handling multiple requests
+  in parallel. It's also limited to a specific quatntization type. Something like Llama.cpp or vLLM
+  would be better suited for real-world use.
+- I could also experiment with larger LLMs. As I was working on this project, I added a hidden
+  requirement that everything has to run on my local machine with limited VRAM.
+- I could have added a list of sources used to anser the questions to the output.
