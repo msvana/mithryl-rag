@@ -7,7 +7,7 @@ from langchain.agents import create_agent
 from langchain.messages import HumanMessage
 from langchain_ollama import ChatOllama
 
-from mithryl_rag.config import VISION_LLM
+from mithryl_rag.config import VISION_LLM, OLLAMA_BASE_URL
 
 
 PROMPT = """
@@ -25,8 +25,10 @@ Otherwise, just describe the image in as much detail as possible.
 
 
 class ImageToText:
-    def __init__(self, llm: str = VISION_LLM):
-        self._llm = ChatOllama(model=llm, temperature=0.0, max_tokens=512)
+    def __init__(self, llm: str = VISION_LLM, ollama_base_url: str = OLLAMA_BASE_URL):
+        self._llm = ChatOllama(
+            model=llm, temperature=0.0, max_tokens=512, base_url=ollama_base_url
+        )
         self._agent = create_agent(self._llm, system_prompt=PROMPT)
 
     def analyze_image(self, image_contents: str) -> str:

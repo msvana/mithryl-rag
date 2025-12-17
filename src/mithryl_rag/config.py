@@ -14,6 +14,7 @@ CHROMA_DIRECTORY = BASE_PATH / "vectors"
 CHUNK_SIZE = 4000
 CHUNK_OVERLAP = 250
 
+OLLAMA_BASE_URL = "http://localhost:11434"
 EMBEDDING_LLM = "embeddinggemma:latest"
 RAG_LLM = "ministral-3:8b"
 VISION_LLM = "ministral-3:3b"

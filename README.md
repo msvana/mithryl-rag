@@ -54,9 +54,10 @@ so that we can convert them to a format the VLM can understand.
 The configuration is stored in `src/mithryl_rag/config.py`. You can change the
 following settings:
 
+- `OLLAMA_BASE_URL`: The base URL of the Ollama server
 - `EMBEDDING_LLM`: The embedding model to use (has to be supported by Ollama)
-- `RAG_LLM`: The LLM to use for the RAG agent (has to be supported by Ollama)
-- `VISION_LLM`: The LLM to use for image analysis (has to be supported by Ollama)
+- `RAG_LLM`: The LLM to use for the RAG agent (has to be supported by Ollama and has to have tool support)
+- `VISION_LLM`: The LLM to use for image analysis (has to be supported by Ollama and has to have vision support)
 - `CHROMA_COLLECTION_NAME`: The name of the ChromaDB collection to use
 - `CHROMA_DIRECTORY`: The directory where the ChromaDB collection is stored
 - `RAG_LLM`: The LLM to use for the RAG agent

@@ -4,10 +4,10 @@ from langchain_ollama import ChatOllama
 from langgraph.checkpoint.memory import InMemorySaver
 
 from mithryl_rag.core.vector_store import VectorStore
-from mithryl_rag.config import RAG_LLM
+from mithryl_rag.config import RAG_LLM, OLLAMA_BASE_URL
 
 vector_store = VectorStore()
-llm = ChatOllama(model=RAG_LLM, temperature=0.0)
+llm = ChatOllama(model=RAG_LLM, temperature=0.0, base_url=OLLAMA_BASE_URL)
 
 
 @tool(response_format="content_and_artifact")

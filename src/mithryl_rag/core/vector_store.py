@@ -14,8 +14,11 @@ class VectorStore:
         self,
         embedding_model: str = config.EMBEDDING_LLM,
         collection_name: str = config.CHROMA_COLLECTION_NAME,
+        ollama_base_url: str = config.OLLAMA_BASE_URL,
     ):
-        self._embeddings = OllamaEmbeddings(model=embedding_model)
+        self._embeddings = OllamaEmbeddings(
+            model=embedding_model, base_url=ollama_base_url
+        )
         self._vector_store = Chroma(
             collection_name=collection_name,
             embedding_function=self._embeddings,
