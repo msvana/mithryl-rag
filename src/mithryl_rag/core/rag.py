@@ -28,10 +28,14 @@ documents you have access to.
 You can retreive documents using the `retrieve_documents` tool. The query
 used with this tool doesn't have to be the same as the question
 from the user. You can modify it. Use the tool as much as you want, but at
-least once per user question.
+least once per each user question. A user can ask multiple questions in one
+chat session. The documents you retreived when answering previous questions
+might or might not be relevant to the new question. 
+Use the `retrieve_documents` tool again if needed.
 
 If the answer to the question is not in the documents, just say that you don't know.
-Do not guess.
+Do not guess and do NOT your using general knowledge. All your answers should be
+based on the documents you retrieve using the `retrieve_documents` tool.
 """
 
 rag_agent = create_agent(
